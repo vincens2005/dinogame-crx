@@ -2708,3 +2708,10 @@ function onDocumentLoad() {
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);
+
+function startgame(){
+    document.getElementById("bigbutt").classList.add("fadeout");
+    setTimeout(() => {
+        document.getElementById("bigbutt").style.display="none"
+    }, 550);
+}
