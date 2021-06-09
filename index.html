@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
     <style>
         h1 {
             color: #333;
@@ -53,13 +52,18 @@
 
         * {
             scrollbar-width: none, -moz-scrollbars-none !important;
+            transition: 0.3s;
         }
 
         .fadeout {
             opacity: 0;
             animation: fadein 0.5s reverse;
         }
-
+        
+        .ohidden {
+            opacity: 0;
+        }
+        
         @keyframes fadein {
             0% {
                 display: none;
@@ -91,7 +95,7 @@
 
 <body id="t" class="offline" style='width:800px;' id="iframe">
   
-    <div id="main-frame-error" class="interstitial-wrapper">
+    <div id="main-frame-error" class="interstitial-wrapper ohidden">
         <div id="main-content">
             <div class="icon icon-offline" alt=""></div>
         </div>

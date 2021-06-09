@@ -2705,6 +2705,9 @@
 
 function onDocumentLoad() {
     new Runner('.interstitial-wrapper');
+    setTimeout(() => {
+        document.getElementById("main-frame-error").classList.remove("ohidden");        
+    }, 140);
 }
 
 document.addEventListener('DOMContentLoaded', onDocumentLoad);

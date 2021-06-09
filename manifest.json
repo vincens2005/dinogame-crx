@@ -2,10 +2,9 @@
   "manifest_version": 2,
   "name": "Dinosaur Game For Firefox",
   "description": "Play the Chrome Dino game on firefox",
-  "version": "1.1.0",
+  "version": "2.0",
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "indox.html"
-  },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
+  }
 }
